@@ -1,0 +1,15 @@
+body{
+	background-color: #9f9f9f;
+	margin: auto;
+	padding: 10px;
+}
+h2{
+	align-content: center;
+	margin: auto;
+	color: white;
+	padding-top: 20px;
+}
+#pic{
+	width: 50vw;
+	height: 50vw;
+}
