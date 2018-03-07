@@ -7,22 +7,21 @@
 	<title>Google Oauth</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="auth.js"></script>
 
 </head>
 <body>
-	<div>
+	<div id="log">
 		<h2 align="center">Please login with Google to continue</h2>
-		<br>
+		<br><br>
+		<div class="g-signin2" align="center" data-onsuccess="onSignIn"></div>
 	</div>
-	<div class="g-signin2" align="center" data-onsuccess="onSignIn"></div>
-	<div class="data" align="center">
+	<div id="data" align="center">
 		<img id="pic">
 		<h3>Accout Info</h3>
-		<p id="email"></p>
+		<h4 id="username"></h4>
+		<h4 id="email"></h4>
 		<button onclick="signOut">SignOut</button>
 	</div>
-	<script src="auth.js"></script>
-	<!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
 </body>
 </html>
