@@ -1,7 +1,6 @@
 
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  $("pic").attr('src',profile.getImageUrl());
   document.getElementById('log').style.display="none";
   document.getElementById('data').style.display="block";
   getElementById('username').innerHTML= profile.getName();
