@@ -12,8 +12,9 @@ h2{
 	padding-top: 20px;
 }
 #pic{
-	width: 50vw;
-	height: 50vw;
+	width: 125px;
+	height: 125px;
+	border-radius: 15px;
 }
 #data{
 	display: none;
@@ -23,6 +24,7 @@ h4{
 	margin: auto;
 }
 button{
+	margin-top: 20px;
 	background-color: #e54040;
 	color: white;
 	text-decoration: none;
