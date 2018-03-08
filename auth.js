@@ -10,10 +10,8 @@ function onSignIn(googleUser) {
 }
 function signOut() {
     console.log('SignOut button clicked');
+    document.getElementById('log').style.display="block";
+    document.getElementById('data').style.display="none";
     var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-      document.getElementById('log').style.display="block";
-      document.getElementById('data').style.display="none";
-    });
+    auth2.signOut();
   }
